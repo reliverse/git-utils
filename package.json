@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Reliverse TypeScript Library/Package Template",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --outDir lib --minify",
+    "build": "tsup src --format cjs,esm --dts --minify",
     "pub": "pnpm publish --access public --no-git-checks",
     "dev": "vitest",
     "test": "vitest run",
@@ -11,16 +11,21 @@
     "ci": "pnpm lint && pnpm build",
     "typecheck": "tsc --noEmit"
   },
-  "files": ["lib"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
-  "types": "./lib/index.d.ts",
-  "main": "lib/index.js",
-  "keywords": ["eslint", "plugin"],
+  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "keywords": [
+    "eslint",
+    "plugin"
+  ],
   "type": "module",
   "author": "reliverse",
   "license": "MIT",
@@ -38,12 +43,16 @@
     "globals": "^15.9.0",
     "knip": "^5.27.2",
     "tsup": "^8.2.4",
+    "tsx": "^4.17.0",
     "typescript": "5.6.0-beta",
     "typescript-eslint": "^8.1.0",
     "vitest": "^2.0.5"
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^8.1.0"
+    "@typescript-eslint/utils": "^8.1.0",
+    "got": "^14.4.2",
+    "kleur": "^4.1.5",
+    "random": "^4.1.0"
   },
   "pnpm": {
     "peerDependencyRules": {

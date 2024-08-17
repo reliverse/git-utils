@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 // import globals from "globals";
 
 export default tseslint.config(
-  { ignores: ["lib"] },
+  { ignores: ["dist"] },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
