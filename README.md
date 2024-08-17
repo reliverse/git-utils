@@ -1,3 +1,3 @@
-# Reliverse TypeScript Library/Package Template
+# Reliverse Git Utils
 
-A powerful TypeScript project template. More features coming soon!
+Reliverse Git Utils

@@ -1,10 +1,11 @@
 {
-  "name": "@reliverse/ts-lib-starter",
+  "name": "@reliverse/git-utils",
   "version": "0.1.0",
-  "description": "Reliverse TypeScript Library/Package Template",
+  "description": "Reliverse Git Utils",
   "scripts": {
     "build": "tsup src --format cjs,esm --dts --minify",
-    "pub": "pnpm publish --access public --no-git-checks",
+    "pub": "pnpm publish --access public",
+    "pub:ngc": "pnpm publish --access public --no-git-checks",
     "dev": "vitest",
     "test": "vitest run",
     "lint": "pnpm eslint . && pnpm typecheck && pnpm test",
