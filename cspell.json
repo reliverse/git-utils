@@ -1,0 +1,38 @@
+{
+  "dictionaries": [],
+  "ignorePaths": [
+    "**/*.lock",
+    "**/*.txt",
+    "build",
+    "dist",
+    "out",
+    "eslint.config.js",
+    "pnpm-lock.yaml"
+  ],
+  "ignoreWords": [],
+  "language": "en",
+  "version": "0.2",
+  "words": [
+    "Approximative",
+    "appts",
+    "blefnk",
+    "bleverse",
+    "bunx",
+    "codemod",
+    "isnan",
+    "knip",
+    "Kornienko",
+    "Korniienko",
+    "Misrefactored",
+    "Nazarii",
+    "Noninteractive",
+    "preinstall",
+    "redrun",
+    "relimter",
+    "relivator",
+    "reliverse",
+    "tseslint",
+    "tsup",
+    "typecheck"
+  ]
+}

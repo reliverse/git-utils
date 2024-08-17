@@ -1,0 +1,7 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["eslint.config.js"],
+  "ignore": ["src/**/*.ts"],
+  "ignoreBinaries": [".+"],
+  "ignoreDependencies": [".+"]
+}
